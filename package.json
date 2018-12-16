@@ -1,0 +1,34 @@
+{
+  "name": "school-interfaces",
+  "version": "1.0.0",
+  "description": "Материалы для мастер-класса по разработке интерфейсов",
+  "main": "memes.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SemyonMakhaev/school-interfaces.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "SemyonMakhaev <semenmakhaev@yandex.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SemyonMakhaev/school-interfaces/issues"
+  },
+  "homepage": "https://github.com/SemyonMakhaev/school-interfaces#readme",
+  "scripts": {
+    "surge": "surge -p ./ -d school-interfaces.surge.sh",
+    "lint": "eslint .",
+    "precommit": "npm run lint",
+    "prepush": "npm run lint"
+  },
+  "dependencies": {
+    "surge": "^0.20.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "husky": "^1.2.1"
+  }
+}
